@@ -1,0 +1,23 @@
+:root{
+    --fontvar1: "Roboto", system-ui;
+
+    --clr1: #bfbfbf;
+    --clr2:  #64748b;
+    --clr3:  #475569;
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}

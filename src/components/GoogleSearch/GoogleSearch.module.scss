@@ -1,0 +1,77 @@
+.appBg {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.appContainer {
+    padding-top: 10%;
+    width: 100%;
+    max-width: 52rem;
+
+    .imageWrapper {
+        width: 420px;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .googleSearchBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: 1px solid #bfbfbf;
+
+        &:hover {
+            box-shadow: 0px 4px 16px 0px #bfbfbf;
+            border: 1px solid transparent;
+        }
+        .searchInput{
+            display: flex;
+        }
+
+        .searchIcon {
+            width: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        input[type="search"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            margin-left: .8rem;
+            font-family: var(--fontvar1);
+            font-size: 1.8rem;
+            color: var(--clr2);
+            &::placeholder{
+                color: var(--clr1);
+            }
+        }
+        .searchList{
+            list-style: none;
+            padding: 0 .8rem;
+            margin-top: 2rem;
+            li{
+                font-family: var(--fontvar1);
+                font-size: 1.8rem;
+                color: var(--clr3);
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .googleSearchBox:has(input:focus) {
+        box-shadow: 0px 4px 16px 0px #bfbfbf;
+        border: 1px solid transparent;
+    }
+}

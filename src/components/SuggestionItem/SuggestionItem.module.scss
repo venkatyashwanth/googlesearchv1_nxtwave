@@ -1,0 +1,12 @@
+.suggestionEl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .imageWrapper{
+        width: 2rem;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
+}
